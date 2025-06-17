@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane id="GridPane" fx:id="GridPaneN1" prefHeight="230.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLDocumentController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label fx:id="newPgX" alignment="CENTER_RIGHT" focusTraversable="false" prefHeight="18.0" prefWidth="120.0" text="Posizione asse X:" textAlignment="RIGHT" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label fx:id="newPgY" alignment="CENTER_RIGHT" focusTraversable="false" prefHeight="18.0" prefWidth="120.0" text="Posizione asse Y:" textAlignment="RIGHT" visible="false" GridPane.rowIndex="2" />
+      <Label fx:id="newPgZ" alignment="CENTER_RIGHT" focusTraversable="false" prefHeight="18.0" prefWidth="120.0" text="Posizione asse Z:" textAlignment="RIGHT" visible="false" GridPane.rowIndex="3" />
+      <TextField fx:id="newPgXF" editable="false" focusTraversable="false" prefHeight="26.0" prefWidth="120.0" promptText="Asse X" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="newPgYF" editable="false" focusTraversable="false" prefHeight="26.0" prefWidth="120.0" promptText="Asse Y" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="newPgZF" editable="false" focusTraversable="false" prefHeight="26.0" prefWidth="120.0" promptText="Asse Z" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="newCoo" alignment="CENTER" mnemonicParsing="false" onAction="#newCoo" prefHeight="26.0" prefWidth="120.0" text="Nuove coordinate" textAlignment="CENTER" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="newPg" onAction="#nuovoPg" prefHeight="22.0" prefWidth="120.0" text="Nuovo Personaggio" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="newAb" disable="true" focusTraversable="false" mnemonicParsing="false" onAction="#newAbilita" prefHeight="26.0" prefWidth="120.0" text="punti abilità" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label fx:id="lvl1" alignment="CENTER" focusTraversable="false" prefHeight="18.0" prefWidth="120.0" text="Livello Sensori:" visible="false" GridPane.rowIndex="1">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lvl2" alignment="CENTER" focusTraversable="false" prefHeight="18.0" prefWidth="120.0" text="Livello Scudi:" visible="false" GridPane.rowIndex="2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lvl3" alignment="CENTER" focusTraversable="false" prefHeight="18.0" prefWidth="120.0" text="Livello Commercio:" visible="false" GridPane.rowIndex="3">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lvlSens" alignment="CENTER" focusTraversable="false" prefHeight="18.0" prefWidth="20.0" text="0" textAlignment="CENTER" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label fx:id="lvlScudi" alignment="CENTER" focusTraversable="false" prefHeight="18.0" prefWidth="20.0" text="0" textAlignment="CENTER" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Label fx:id="lvlCom" alignment="CENTER" focusTraversable="false" prefHeight="18.0" prefWidth="20.0" text="0" textAlignment="CENTER" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Button fx:id="meno3" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#meno3" prefHeight="26.0" prefWidth="50.0" text="&lt;" textAlignment="RIGHT" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="piu3" mnemonicParsing="false" onAction="#piu3" prefHeight="26.0" prefWidth="50.0" text="&gt;" textAlignment="CENTER" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Button fx:id="meno1" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#meno1" prefHeight="26.0" prefWidth="50.0" text="&lt;" textAlignment="RIGHT" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="piu1" mnemonicParsing="false" onAction="#piu1" prefHeight="26.0" prefWidth="50.0" text="&gt;" textAlignment="CENTER" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Button fx:id="meno2" mnemonicParsing="false" onAction="#meno2" prefHeight="26.0" prefWidth="50.0" text="&lt;" textAlignment="CENTER" visible="false" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Button fx:id="piu2" mnemonicParsing="false" onAction="#piu2" prefHeight="26.0" prefWidth="50.0" text="&gt;" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Button fx:id="back1" focusTraversable="false" mnemonicParsing="false" onAction="#back1" text="&lt;- Indietro" visible="false" GridPane.rowIndex="4" />
+      <Button fx:id="conf1" focusTraversable="false" mnemonicParsing="false" onAction="#conferma1" text="Conferma" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+   </children>
+</GridPane>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="main" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLDocument2Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="740.799951171875" minWidth="10.0" prefWidth="645.4000366210937" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="635.2000122070312" minWidth="10.0" prefWidth="378.1999633789062" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="708.6000244140625" minHeight="10.0" prefHeight="648.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="475.5999816894531" minHeight="10.0" prefHeight="120.79999999999995" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextArea fx:id="pianetiInc" editable="false" focusTraversable="false" maxHeight="100.0" maxWidth="365.0" prefHeight="100.0" prefWidth="365.0" promptText="Nessun Pianeta Incontrato..." wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Label text="by Dario Popa" textAlignment="CENTER" textFill="#ff0000d9" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+      <Label fx:id="Pos" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" prefHeight="46.0" prefWidth="210.0" text="nulla eterno" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <TextField fx:id="ComFatti" alignment="TOP_LEFT" editable="false" focusTraversable="false" maxHeight="25.0" maxWidth="135.0" prefHeight="25.0" prefWidth="130.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="15.0" top="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="ScudiR" alignment="TOP_LEFT" editable="false" focusTraversable="false" maxHeight="25.0" maxWidth="135.0" prefHeight="25.0" prefWidth="130.0" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets left="175.0" top="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="CapC" alignment="TOP_LEFT" editable="false" focusTraversable="false" maxHeight="25.0" maxWidth="135.0" prefHeight="25.0" prefWidth="130.0" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="175.0" top="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="CapS" alignment="TOP_LEFT" editable="false" focusTraversable="false" maxHeight="25.0" maxWidth="135.0" prefHeight="25.0" prefWidth="130.0" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets right="15.0" top="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="PianetiR" alignment="TOP_LEFT" editable="false" focusTraversable="false" maxHeight="26.0" maxWidth="165.0" prefHeight="26.0" prefWidth="165.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <Button fx:id="exit" focusTraversable="false" mnemonicParsing="false" onAction="#Exit" text="Exit" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" />
+         </GridPane.margin>
+      </Button>
+      <Button fx:id="indizio" focusTraversable="false" mnemonicParsing="false" onAction="#indizio" prefHeight="26.0" prefWidth="99.0" text="Indizio" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="405.0" />
+         </GridPane.margin>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="522.0" stroke="BLACK" strokeType="INSIDE" width="643.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f0f2f4" height="30.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="238.0" text="In quale Direzione vuoi Muoverti:" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#su" text="Su" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="250.0" top="75.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label disable="true" text="(Asse X)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="175.0" top="75.0" />
+         </GridPane.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#giu" text="Giù" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="250.0" top="140.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label disable="true" text="(Asse X)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="175.0" top="140.0" />
+         </GridPane.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#destra" prefHeight="26.0" prefWidth="52.0" text="Destra" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="50.0" top="75.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label disable="true" text="(Asse Y)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="50.0" top="140.0" />
+         </GridPane.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#sinistra" text="Sinistra" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="50.0" top="140.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label disable="true" text="(Asse Y)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="50.0" top="75.0" />
+         </GridPane.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#avanti" text="Avanti" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="150.0" top="75.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label disable="true" text="(Asse Z)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="250.0" top="75.0" />
+         </GridPane.margin>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#dietro" text="Dietro" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="150.0" top="140.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label disable="true" text="(Asse Z)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="250.0" top="140.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>
